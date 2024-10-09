@@ -1,1 +1,139 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
+/* New Color Palette:
+* Off White (Background, Text): #F4F4F4     (canvas background)
+* Light Green (Primary):        #86826F     (buttons, text)
+* Dark Green (Secondary):       #3C3C0D     (element background)
+* Light Orange  (Accent):       #F1E7DE     
+*/
+
+.bg-info {
+  background-color: #86826f !important; /* Light green for secondary backgrounds */
+}
+
+.logo {
+  width: 40px;
+}
+
+.logo svg {
+  width: 100%;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: #f1e7de; /* Dark green for brand name & nav links for visibility */
+}
+
+.btn-primary {
+  color: #f4f4f4; /* Lightest shade for text */
+  font-size: 150%;
+  background-color: #3c3c0d; /* Dark green for primary button background */
+  border-color: #3c3c0d; /* Reddish-brown for border to use as accent */
+  border-width: thick;
+}
+
+.btn-primary:hover {
+  background-color: #86826f;
+  border-color: #86826f;
+}
+
+body {
+  background-color: #f4f4f4; /* Lightest shade for body background to follow the 60% rule */
+  font-family: "Poppins", serif;
+}
+
+/* .stars .material-icons {
+  color: #DFBEA0;
+} */
+
+.sticky-bar .material-icons {
+  color: #f1e7de;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Dela Gothic One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-brand {
+  font-family: "Dela Gothic One", serif;
+  font-size: 2.25rem;
+}
+
+/* Buttons */
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Style for radio button labels when not selected */
+.btn-outline-primary {
+  color: #3c3c0d; /* Dark green text color for contrast */
+  border-color: #3c3c0d; /* Light green border color */
+}
+
+/* Style for radio button labels on hover or focus */
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #f2fbf2; /* Lightest color for text */
+  background-color: #86826f; /* Light green background */
+  border-color: #86826f; /* Dark green border for emphasis */
+}
+
+.btn-check + .btn:hover {
+  color: #86826f;
+  border-color: #86826f;
+}
+
+/* Style for the active (checked) radio button label */
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary {
+  color: #f4f4f4; /* Lightest color for text */
+  background-color: #3c3c0d; /* Dark green background for primary action */
+  border-color: #3c3c0d; /* Reddish-brown border to use as accent */
+}
+
+/* Dropdown */
+/* Custom styles for dropdown to match the new color palette */
+
+/* Style for the dropdown button */
+.btn-secondary {
+  color: #f4f4f4; /* Lightest color for text */
+  background-color: #3c3c0d; /* Dark green for the button background */
+  border-color: #3c3c0d; /* Light green for the button border */
+}
+
+/* Change dropdown button hover/focus styles */
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #f2fbf2; /* Lightest color remains for text */
+  background-color: #86826f; /* Light green for background on hover/focus */
+  border-color: #86826f; /* Dark green for border for emphasis */
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+  background-color: #fffbf7; /* Lightest color for dropdown background */
+  border-color: #3c3c0d; /* Light green for border color */
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+  color: #3c3c0d; /* Dark green for text color */
+}
+
+/* Style for dropdown item hover */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #f4f4f4; /* Lightest color for text on hover/focus */
+  background-color: #86826f; /* Light green for background on hover/focus */
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My BCIT Project</title>
+    <meta name="comp1800 template" content="My 1800 App" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap Library CSS CDN go here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Boostrap Library JS CDN  go here -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Other libraries go here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Icons (Material Design)-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    /> -->
+    <!-- Link to styles of your own -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!------------------------------>
+    <!-- Your HTML Layout go here -->
+    <!------------------------------>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand align-items-center d-flex" href="#">
+            <span class="logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="75"
+                height="75"
+                viewBox="0 0 75 75"
+                fill="none"
+              >
+                <path
+                  d="M41.25 71.25L27.75 43.5375C27.4429 42.9035 26.9635 42.3688 26.3666 41.9946C25.7697 41.6205 25.0795 41.4221 24.375 41.4221C23.6705 41.4221 22.9803 41.6205 22.3834 41.9946C21.7865 42.3688 21.3071 42.9035 21 43.5375L7.5 71.25H41.25ZM41.25 71.25L32.3625 53.025L41.7 35.7C42.0213 35.1047 42.4977 34.6074 43.0786 34.2608C43.6596 33.9142 44.3235 33.7312 45 33.7312C45.6765 33.7312 46.3404 33.9142 46.9213 34.2608C47.5023 34.6074 47.9787 35.1047 48.3 35.7L67.5 71.25H41.25ZM3.75001 71.25H71.25M15 3.75C12.775 3.75 10.5999 4.4098 8.74984 5.64597C6.89979 6.88213 5.45785 8.63914 4.60636 10.6948C3.75487 12.7505 3.53209 15.0125 3.96617 17.1948C4.40025 19.3771 5.47171 21.3816 7.04505 22.955C8.61839 24.5283 10.623 25.5998 12.8052 26.0338C14.9875 26.4679 17.2495 26.2451 19.3052 25.3936C21.3609 24.5422 23.1179 23.1002 24.354 21.2502C25.5902 19.4001 26.25 17.225 26.25 15C26.25 12.0163 25.0647 9.15483 22.955 7.04505C20.8452 4.93526 17.9837 3.75 15 3.75Z"
+                  stroke="currentColor"
+                  stroke-width="7.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </span>
+
+            <span class="ms-2">HeatherHikes</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Navigate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Saved</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Explore</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="py-5">
+      <form class="container">
+        <div class="card-body form-group">
+          <label for="hikename">Name of the hike:</label>
+          <input type="text" id="hikename" class="form-control" />
+        </div>
+        <div class="card-body stars">
+          <p>Rate your overall experience:</p>
+          <span class="material-icons" id="star1">star</span>
+          <span class="material-icons" id="star2">star</span>
+          <span class="material-icons" id="star3">star</span>
+          <span class="material-icons" id="star4">star_outline</span>
+        </div>
+        <div class="card-body form-group mb-3 mt-3">
+          <label for="comment">Comments:</label>
+          <textarea
+            class="form-control"
+            rows="5"
+            id="comment"
+            name="text"
+          ></textarea>
+        </div>
+        <div class="card-body form-group">
+          <div id="group">
+            <label style="width: 100px">Muddy</label>
+            <input type="radio" value="val1" name="mud" />
+            <label style="width: 50px">Yes</label>
+            <input type="radio" value="val2" name="mud" />
+            <label style="width: 50px">No</label>
+          </div>
+        </div>
+        <div class="card-body form-group dropdown mb-4 mt-4">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenu"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Level of the Hike
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li>
+              <button class="dropdown-item" type="button" id="leveleasy">
+                Easy
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button" id="levelmoderate">
+                Moderate
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button" id="levelhard">
+                Hard
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body d-grid gap-2">
+          <button id="submit" class="btn btn-primary" type="button">
+            Submit
+          </button>
+        </div>
+      </form>
+
+      <div
+        class="sticky-bar navbar justify-content-evenly bg-info fixed-bottom"
+      >
+        <div class="container py-3">
+          <span class="material-icons">favorite</span>
+          <span class="material-icons">home</span>
+          <span class="material-icons">map</span>
+        </div>
+      </div>
+    </main>
+    <!-- copyright footer -->
+    <footer
+      class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <p class="col-md-4 mb-0 text-muted">&copy; 2024 BCIT COMP1800</p>
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+      >
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap" />
+        </svg>
+      </a>
+    </footer>
+    <!---------------------------------------------->
+    <!-- Your own JavaScript functions go here    -->
+    <!---------------------------------------------->
+    <!-- Link to scripts of your own -->
+    <!-- <script src="./scripts/script.js"></script> -->
+  </body>
+</html>
